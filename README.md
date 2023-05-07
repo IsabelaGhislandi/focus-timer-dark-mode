@@ -5,6 +5,7 @@ Project developed at the Rocketseat Explorer program. Creating a 'Focus Timer' (
 - HTML
 - CSS
 - Javascript
+- Figma
 
 # What I learned in this project?
 
