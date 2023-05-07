@@ -14,7 +14,6 @@ Project developed at the Rocketseat Explorer program. Creating a 'Focus Timer' (
 - Dependency Injection
 - Audio Object Methods
 - JavaScript Events
-- addEventListener()
 - Callback Function
 - Clean Code
 - Code Refactoring
