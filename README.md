@@ -10,6 +10,8 @@ Project developed at the Rocketseat Explorer program. Creating a 'Focus Timer' (
 # What I learned in this project?
 
 - Factory Functions
+- Object Destructuring
+- Dependency Injection
 - Audio Object Methods
 - JavaScript Events
 - addEventListener()
