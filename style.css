@@ -1,0 +1,262 @@
+:root {
+    font-size: 62.5%;
+    --text-color: #323238;
+    --bg-card: #E1E1E6;
+    --bg-select:  #02799D;
+    --bg-body: #FFFFFF;
+    --bg-dark: #121214;
+    --btn-dark: #29292E;
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    background-color: var(--bg-body);
+    display: grid;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    flex-wrap: wrap;
+    gap: 19.2rem;
+}
+
+.britghness{
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 6rem 6rem 0 0;
+}
+  
+  .light {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+  }
+  
+  .light > svg:hover path {
+      fill: var(--bg-select) !important;
+      transition: all 10ms ease-in-out;
+  }
+  
+  .dark> svg:hover path {
+      
+      fill: var(--bg-select) !important;
+      transition: all 10ms ease-in-out;
+      animation-name: moveArrow;
+  }
+  
+  .hide {
+      display: none;
+  }
+  
+  .darkmode {
+      background-color: var(--bg-dark);
+      color: var(--bg-card);
+  }
+  
+  .dark {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+  }
+  
+
+#timer {
+    display: flex;
+    flex-direction: column;
+    max-width: 32.1rem;
+    max-height: 21.3rem;
+    gap: 2.5rem;
+}
+
+#numbers {
+    font-size:10rem;
+}
+
+.controls {
+   display: flex;
+   justify-content: space-between;
+}
+
+
+.btn {
+    border: none;
+    background-color: transparent;
+    width: 4.8rem;
+    height: 4.8rem;
+    cursor: pointer;
+}
+
+.btn > svg:hover path{
+    fill: var(--bg-select) !important;
+    transition: all 250ms ease-in-out;   
+}
+
+.sounds {
+   
+    width: 30.8rem;
+    height: 33.5rem;
+    display: grid; 
+  
+    grid-template-areas: 
+      "1"
+      "2"; 
+    gap: 3.2rem;
+}
+
+.day-rainy {
+    grid-area: 1;
+   display: flex;
+   justify-content: space-between;
+}
+
+.city {
+    grid-area: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.soundBtn {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    width: 13.8rem;
+    height: 15.2rem;
+    background-color: var(--bg-card);
+    border: none;
+    border-radius: 2rem;
+}
+
+.black {
+    background-color: var(--btn-dark);
+}
+
+
+.soundBtn:hover {
+    background-color: var(--bg-select);
+    transition: all 300ms ease-in-out;
+    animation-name: moveArrow;
+    fill: white;
+    cursor: pointer;
+}
+
+.soundSelected {
+    background-color: var(--bg-select);
+}
+
+input[type="range" i] {
+    background: var(--text-color);
+    accent-color: var(--text-color);
+    appearance: none; 
+    margin-top: 3.2rem;
+    width: 9rem;
+    height: 0.5rem;
+    outline: none;
+    border-radius: 1.5rem;
+    z-index: 1;
+}
+.btn > svg {
+    width: 4.8rem;
+    height: 4.8rem;
+}
+
+.soundBtn > svg {
+    width: 4.4rem;
+    height: 5.8rem;
+    
+}
+
+@keyframes button--in {
+  0% { clip-path: inset(100% 0 0 0); }
+  100% { clip-path: inset(0 0 0 0); }
+}
+
+
+  @media (max-width: 45.0rem) {
+    main {
+        font-size: 2rem;
+        padding: 2rem;
+        gap: 0;
+
+        justify-content: center;
+    }
+
+    #numbers {
+        font-size:5rem;
+    }
+
+    #timer {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 2rem;
+        margin: 0;
+    }
+
+    .controls {
+        min-width: 1rem;
+    }
+
+    .sounds {
+        gap: 0;
+        padding: 2rem;
+        min-width: 4%;
+        min-height: 4%;
+    }
+    .soundBtn {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .soundBtn > svg:nth-child(1) {
+        width: 3.4rem;
+        height: 3.8rem;
+    }
+    
+
+    input[type="range" i] {
+        margin-top: 1.2rem;
+        width: 6rem;
+        height: 0.3rem;
+        z-index: 1;
+    }
+
+    .britghness {
+        padding: 4rem 4rem 0 0;
+    }
+
+  }
+
+  @media (max-width: 78.0rem) {
+    main {
+        font-size: 2rem;
+        padding: 2rem;
+        gap: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+  }
+
+  @media (max-width: 103rem) {
+    main {
+        justify-content: center;
+        font-size: 8rem;
+    }
+    .britghness {
+        padding: 4rem 4rem 0 0;
+    }
+
+
+  }
