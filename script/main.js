@@ -29,6 +29,8 @@ const timer = Timer({ minutesDisplay, secondsDisplay, forest: sound.forest, town
 const dark = darkMode({darkmode, lightmode, svg, btnRainy, btnCity, rangeInput})
 const controls = Controls({volumeRange, forest: sound.forest, town: sound.town, rain: sound.rain, soundFire: sound.soundFire})
 
+window.onload = () => setTimeout(() => window.dispatchEvent(new Event('touchend')), 500);
+
 //DARK MODE
 lightmode.addEventListener("click", function() {
     
@@ -39,6 +41,8 @@ darkmode.addEventListener("click", function() {
     
     dark.darkSVGColor()
 })
+
+
 
 //TIMER
 play.addEventListener("click", function() {
