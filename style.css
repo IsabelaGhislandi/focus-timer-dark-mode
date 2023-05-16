@@ -28,25 +28,48 @@ main {
     gap: 19.2rem;
 }
 
-.britghness{
+.britghness {
     position: fixed;
     top: 0;
     right: 0;
-    padding: 6rem 6rem 0 0;
+    
+    margin: 6rem 8rem 0;
+   background: transparent;
+
+    
 }
+
   
   .light {
       border: none;
-      background-color: transparent;
+      justify-content: center;
+      align-items: center;
+      background: transparent;
       cursor: pointer;
+   
   }
   
+  .light > svg {
+    width: 4.6rem;
+    height: 4.6rem;
+  }
+ 
+  .light > svg path {
+    fill: var(--btn-dark);
+  
+}
+
   .light > svg:hover path {
       fill: var(--bg-select) !important;
       transition: all 10ms ease-in-out;
   }
+
+  .dark > svg {
+    width: 4.6rem;
+    height: 4.6rem;
+  }
   
-  .dark> svg:hover path {
+  .dark > svg:hover path {
       
       fill: var(--bg-select) !important;
       transition: all 10ms ease-in-out;
@@ -177,23 +200,50 @@ input[type="range" i] {
     
 }
 
+
 @keyframes button--in {
   0% { clip-path: inset(100% 0 0 0); }
   100% { clip-path: inset(0 0 0 0); }
 }
 
 
-  @media (max-width: 45.0rem) {
+@media (max-width: 32rem) {
+
+    main {
+        margin: 0;
+        overflow: hidden;
+        justify-content: center;
+        
+        max-width:32rem;
+        gap: 0;
+        margin-right: 3rem;
+        
+    }
+    #timer {
+        font-size: 1rem;
+    }
+    .brightness {
+      
+        width: 5rem;
+        height: 5rem;
+        margin: 0;
+        padding: 0rem 1rem 3rem 1rem;
+    }
+    
+}
+
+  @media (max-width: 48rem) and (max-width: 76rem) {
+
     main {
         font-size: 2rem;
         padding: 2rem;
         gap: 0;
-
         justify-content: center;
     }
 
     #numbers {
-        font-size:5rem;
+        font-size: 5rem;
+        justify-content: center;
     }
 
     #timer {
@@ -204,9 +254,10 @@ input[type="range" i] {
         margin: 0;
     }
 
-    .controls {
-        min-width: 1rem;
-    }
+  .btn > svg {
+    width:3rem;
+    height: 3rem;
+  }
 
     .sounds {
         gap: 0;
@@ -233,30 +284,32 @@ input[type="range" i] {
     }
 
     .britghness {
-        padding: 4rem 4rem 0 0;
-    }
-
-  }
-
-  @media (max-width: 78.0rem) {
-    main {
-        font-size: 2rem;
+        
+        margin: 1rem 0rem 1rem 2rem;
         padding: 2rem;
-        gap: 3rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+     }
+
+     .light > svg {
+        width: 4rem;
+        height:4rem;
+     }
+     .dark > svg {
+        width: 4rem;
+        height:4rem;
+     }
+
+    
   }
 
-  @media (max-width: 103rem) {
-    main {
-        justify-content: center;
-        font-size: 8rem;
-    }
-    .britghness {
-        padding: 4rem 4rem 0 0;
-    }
+  @media (max-width: 87rem) {
 
-
+        main {
+            font-size: 2rem;
+            padding: 2rem;
+            gap: 2rem;
+            flex-direction: column;
+            justify-content: center;
+        }
+    
   }
+
