@@ -28,6 +28,10 @@ main {
     gap: 19.2rem;
 }
 
+.soundSelected {
+    background-color: var(--bg-select);
+}
+
 .britghness {
     position: fixed;
     top: 0;
@@ -174,9 +178,7 @@ main {
     cursor: pointer;
 }
 
-.soundSelected {
-    background-color: var(--bg-select);
-}
+
 
 input[type="range" i] {
     background: var(--text-color);
@@ -200,11 +202,6 @@ input[type="range" i] {
     
 }
 
-
-@keyframes button--in {
-  0% { clip-path: inset(100% 0 0 0); }
-  100% { clip-path: inset(0 0 0 0); }
-}
 
 
 @media (max-width: 32rem) {
