@@ -12,7 +12,7 @@ export default function Sound({ soundForest, soundRain, soundTown, soundTownFire
     soundFire.loop = true
   
     function playForest() {
-        soundForest.classList.add("soundSelected")
+        soundForest.classList.toggle("soundSelected")
         soundRain.classList.remove("soundSelected")
         soundTown.classList.remove("soundSelected")
         soundTownFire.classList.remove("soundSelected")
@@ -27,13 +27,13 @@ export default function Sound({ soundForest, soundRain, soundTown, soundTownFire
         forest.pause()
         rain.pause()
         soundFire.pause()
-        soundForest.classList.remove("soundSelected")
+     
     }
         
     }
     function playTown() {
 
-        soundTown.classList.add("soundSelected")
+        soundTown.classList.toggle("soundSelected")
         soundForest.classList.remove("soundSelected")
         soundRain.classList.remove("soundSelected")
         soundTownFire.classList.remove("soundSelected")
@@ -50,11 +50,11 @@ export default function Sound({ soundForest, soundRain, soundTown, soundTownFire
             forest.pause()
             rain.pause()
             soundFire.pause()
-            soundTown.classList.remove("soundSelected")
+           
         }
     }
     function playRain() {
-        soundRain.classList.add("soundSelected")
+        soundRain.classList.toggle("soundSelected")
         soundForest.classList.remove("soundSelected")
         soundTown.classList.remove("soundSelected")
         soundTownFire.classList.remove("soundSelected")
@@ -70,7 +70,7 @@ export default function Sound({ soundForest, soundRain, soundTown, soundTownFire
         forest.pause()
         rain.pause()
         soundFire.pause()
-     soundRain.classList.remove("soundSelected")
+     
     }
         
     }
@@ -78,7 +78,7 @@ export default function Sound({ soundForest, soundRain, soundTown, soundTownFire
         soundTown.classList.remove("soundSelected")
         soundForest.classList.remove("soundSelected")
         soundRain.classList.remove("soundSelected")
-        soundTownFire.classList.add("soundSelected")
+        soundTownFire.classList.toggle("soundSelected")
       
 
         if (soundTownFire.classList.contains("soundSelected")){
@@ -92,7 +92,7 @@ export default function Sound({ soundForest, soundRain, soundTown, soundTownFire
             forest.pause()
             rain.pause()
             soundFire.pause()
-         soundTownFire.classList.remove("soundSelected")
+     
         }
         
     }
