@@ -50,6 +50,8 @@ play.addEventListener("click", function() {
 
     if (soundForest.classList.contains("soundSelected")){
         sound.forest.play()
+    } else {
+     soundForest.classList.remove("soundSelected")
     }
     if (soundRain.classList.contains("soundSelected")){
         sound.rain.play()
