@@ -29,7 +29,7 @@ const timer = Timer({ minutesDisplay, secondsDisplay, forest: sound.forest, town
 const dark = darkMode({darkmode, lightmode, svg, btnRainy, btnCity, rangeInput})
 const controls = Controls({volumeRange, forest: sound.forest, town: sound.town, rain: sound.rain, soundFire: sound.soundFire})
 
-window.onload = () => setTimeout(() => window.dispatchEvent(new Event('touchend')), 500);
+
 
 //DARK MODE
 lightmode.addEventListener("click", function() {
@@ -50,8 +50,6 @@ play.addEventListener("click", function() {
 
     if (soundForest.classList.contains("soundSelected")){
         sound.forest.play()
-    } else {
-     soundForest.classList.remove("soundSelected")
     }
     if (soundRain.classList.contains("soundSelected")){
         sound.rain.play()
