@@ -28,9 +28,7 @@ main {
     gap: 19.2rem;
 }
 
-.soundSelected {
-    background-color: var(--bg-select);
-}
+
 
 .britghness {
     position: fixed;
@@ -163,6 +161,9 @@ main {
     background-color: var(--bg-card);
     border: none;
     border-radius: 2rem;
+}
+.soundSelected {
+    background-color: var(--bg-select);
 }
 
 .black {
